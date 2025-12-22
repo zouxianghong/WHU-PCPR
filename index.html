@@ -1,0 +1,172 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>WHU-PCPR: A cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes</title>
+  <link href="./WHU-PCPR/style.css" rel="stylesheet">
+  <script type="text/javascript" src="./WHU-PCPR/jquery.mlens-1.0.min.js"></script>
+  <script type="text/javascript" src="./WHU-PCPR/jquery.js"></script>
+  <style>
+    .divider {
+      border-right: 2px dashed #737373;
+      width: 2px;
+    }
+  </style>
+  <style>
+    .divider_horizontal {
+      border-top: 2px dashed #737373;
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <div class="content">
+    <h1><strong>WHU-PCPR: A cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes</strong>
+    </h1>
+    <p id="authors">
+      <span>
+        <a href="https://zouxianghong.github.io/">Xianghong Zou<sup>1</sup></a>
+      </span>
+      <span>
+        <a href="https://github.com/kafeiyin00">Jianping Li<sup>2,&dagger;</sup></a>
+      </span>
+      <span>
+        <a href="https://github.com/yandiyang">Yandi Yang<sup>3</sup></a>
+      </span>
+      <br>
+	    <span>
+        <a href="https://github.com/wwtinwhu">Weitong Wu<sup>4</sup></a>
+      </span>
+      <span>
+        <a href="https://dongzhenwhu.github.io/">Zhen Dong<sup>5</sup></a>
+      </span>
+	    <span>
+        <a href="https://github.com/yqx7150">Qiegen Liu<sup>6,&dagger;</sup></a>
+      </span>
+      <br>
+      <span class="institution">
+        <a href="https://jdgcxy.ncu.edu.cn/"><sup>1</sup> School of Advanced Manufacturing, Nanchang University</a><br>
+        <a href="https://www.ntu.edu.sg/eee"><sup>2</sup> School of Electrical and Electronic Engineering, Nanyang Technological University</a><br>
+        <a href="https://schulich.ucalgary.ca/geomatics"><sup>3</sup> Department of Geomatics Engineering, University of Calgary</a><br>
+        <a href="https://dxy.hhu.edu.cn/"><sup>4</sup> School of Earth Sciences and Engineering, Hohai University</a><br>
+		    <a href="https://liesmars.whu.edu.cn/"><sup>5</sup> State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University</a><br>
+        <a href="https://ie.ncu.edu.cn/"><sup>6</sup> School of Information Engineering, Nanchang University</a></span>
+		    <sup>&dagger;</sup>Corresponding authors. &nbsp;&nbsp; 
+    </p>
+    <font size="+2">
+      <p style="text-align: center;">
+        <a href="xxx" target="_blank">[Paper]</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/zouxianghong/WHU-PCPR" target="_blank">[Code]</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="WHU-PCPR/bibtex.txt" target="_blank">[BibTeX]</a>
+      </p>
+    </font>
+  </div>
+
+  <div class="content">
+    <h2 style="text-align:center;">Abstract</h2>
+    <p>Point cloud place recognition (PCPR) demonstrates considerable potential in applications such as autonomous driving, robot localization and navigation, and augmented reality. However, existing PCPR datasets lack diversity in scenes, platforms, and sensors, which limits the effective development of related research. To address this gap, we establish WHU-PCPR, a cross-platform heterogeneous point cloud dataset designed for place recognition.
+WHU-PCPR differentiates itself from existing datasets through its distinctive characteristics: 1) cross-platform heterogeneous point clouds: collected from survey-grade vehicle-mounted laser scanning (MLS) systems and low-cost portable helmet-mounted laser scanning (HLS) systems, each equipped with distinct mechanical and solid-state LiDAR sensors. 2) Complex localization scenes: encompassing real-time and long-term changes in both urban and campus road scenes. 3) Large-scale spatial coverage: featuring 82.3 km of trajectory over a 60-month period and an unrepeated route of approximately 30 km.
+Based on WHU-PCPR, we conduct extensive evaluation and in-depth analysis of several representative PCPR methods, and provide a concise discussion of key challenges and future research directions. The dataset and benchmark code are available at https://github.com/zouxianghong/WHU-PCPR.</p>
+	<img src="./WHU-PCPR/overview.jpg" class="workflow" style="width:100%;"><br>
+    <a style="text-align:center">
+      WHU-PCPR, <strong> a cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes. </strong>.
+    It features: 
+	  1) cross-platform heterogeneous point clouds: collected from survey-grade vehicle-mounted laser scanning (MLS) systems and low-cost portable helmet-mounted laser scanning (HLS) systems, each equipped with distinct mechanical and solid-state LiDAR sensors.
+    2) Complex localization scenes: encompassing real-time and long-term changes in both urban and campus road scenes.
+    3) Large-scale spatial coverage: featuring 82.3 km of trajectory over a 60-month period and an unrepeated route of approximately 30 km.
+	</a>
+  </div>
+
+  <h2 style="text-align:center;">Dataset</h2>
+  <div>
+	  <img class="summary-img" src="./WHU-PCPR/characteristics.jpg" style="width:100%;">
+	</div>
+    <a>
+      <center>Characteristics of WHU-PCPR.</center>
+    </a>
+  
+  
+  <a>
+      <center>Detailed description of WHU-PCPR dataset.</center>
+  </a>
+  <div>
+	  <img class="summary-img" src="./WHU-PCPR/overview_table.png" style="width:75%;">
+	</div>
+
+  <div>
+	  <img class="summary-img" src="./WHU-PCPR/cloud_distance.jpg" style="width:100%;">
+	</div>
+    <a>
+      <center>Cloud to cloud distance in WHU-PCPR. (a) WHU 1\&2 (CS college),  (b) WHU 1\&2 (Info campus), (c) Hankou 1\&2 (Zhongshan Park), (d) Hankou 1\&2 (Jiefang Road 1), (e) WHU 1\&3 (CS college), (f) WHU 1\&3 (Info campus), (g) Hankou 1\&3 (Zhongshan Park), (h) Hankou 1\&3 (Jiefang Road 1).</center>
+    </a>
+
+  <div class="content">
+
+	<h2 style="text-align:center;">Benchmark - Retrieval</h2>
+  <a>
+      <center>Retrieval results on Wuhan-PCPR and Oxford.</center>
+  </a>
+	<div>
+	  <img class="summary-img" src="./WHU-PCPR/retrieval_table.png" style="width:100%;">
+	</div>
+  
+	<div>
+	  <img class="summary-img" src="./WHU-PCPR/retrieval_pr_curve.jpg" style="width:100%;">
+	</div>
+    <a>
+      <center>Recall curves of retrieval baselines on Wuhan-PCPR and Oxford RobotCar. (a) Hankou 1&2, (b) Hankou 1&3, (c) Hankou 2&3, (d) WHU 1&2, (e) WHU 1&3, (f) WHU 2&3.</center>
+    </a>
+	<br>
+
+  <h2 style="text-align:center;">Benchmark - Reranking</h2>
+  <a>
+      <center>Reranking results on Wuhan-PCPR and Oxford.</center>
+  </a>
+	<div>
+	  <img class="summary-img" src="./WHU-PCPR/reranking_table.png" style="width:100%;">
+	</div>
+  
+	<div>
+	  <img class="summary-img" src="./WHU-PCPR/reranking_pr_curve.jpg" style="width:100%;">
+	</div>
+    <a>
+      <center>Recall and precision curves of reranking baselines on Wuhan-PCPR. (a)/(d) Hankou 1&2, (b)/(e) Hankou 1&3, (c)/(f) Hankou 2&3, (g)/(j) WHU 1&2, (h)/(k) WHU 1&3, (i)/(l) WHU 2&3.</center>
+    </a>
+	<br>
+	
+  <h2 style="text-align:center;">Retrieval and reranking cases</h2>
+	<div>
+	  <img class="summary-img" src="./WHU-PCPR/success_cases.jpg" style="width:100%;">
+	</div>
+    <a>
+      <center>Success place recognition cases when using LoGG3DNet for retrieval and SGV for reranking. (a) case 1 on Hankou, (b) case 2 on WHU, (c) case 3 on WHU. Purple represents query, red represents failure, and green represents success.</center>
+    </a>
+  <div>
+	  <img class="summary-img" src="./WHU-PCPR/bad_cases.jpg" style="width:100%;">
+	</div>
+    <a>
+      <center>Bad cases of place recognition (LoGG3DNet and SGV) on Wuhan-PCPR. (a) case 1, (b) case 2, (c) case 3.</center>
+    </a>
+	<br>
+	
+  </div>
+
+  <div class="content">
+    <h2>BibTex</h2>
+    <code> @article{zou2025WHU-PCPR,<br>
+  &nbsp;&nbsp;title={WHU-PCPR: A cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes},<br>
+  &nbsp;&nbsp;author={Zou, Xianghong and Li, Jianping and Yang, Yandi and Wu, Weitong and Dong, Zhen and Liu, Qiegen},<br>
+  &nbsp;&nbsp;journal={ISPRS Journal of Photogrammetry and Remote Sensing},<br>
+  &nbsp;&nbsp;volume={xxx},<br>
+  &nbsp;&nbsp;pages={xxx--xxx},<br>
+  &nbsp;&nbsp;year={2025}<br>
+  &nbsp;&nbsp;publisher={Elsevier}<br>
+  } </code>
+  </div>
+</body>
+
+</html>
