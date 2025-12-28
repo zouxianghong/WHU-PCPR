@@ -1,6 +1,6 @@
 @article{zou2026whu_pcpr,
   title={WHU-PCPR: A cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes},
-  author={Zou, Xianghong and Li, Jianping and Yang, Yandi and Wu, Weitong and Dong, Zhen and Liu, Qiegen},
+  author={Zou, Xianghong and Li, Jianping and Yang, Yandi and Wu, Weitong and Wang, Zhen and Liu, Qiegen and Dong, Zhen},
   journal={ISPRS Journal of Photogrammetry and Remote Sensing},
   volume={xxx},
   pages={xxx--xxx},
