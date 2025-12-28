@@ -38,14 +38,17 @@
         <a href="https://github.com/yandiyang">Yandi Yang<sup>3</sup></a>
       </span>
       <br>
-	    <span>
+	  <span>
         <a href="https://github.com/wwtinwhu">Weitong Wu<sup>4</sup></a>
       </span>
-      <span>
-        <a href="https://dongzhenwhu.github.io/">Zhen Dong<sup>5</sup></a>
+	  <span>
+        <a>Yuan Wang<sup>5</sup></a>
       </span>
-	    <span>
+	  <span>
         <a href="https://github.com/yqx7150">Qiegen Liu<sup>6,&dagger;</sup></a>
+      </span>
+	  <span>
+        <a href="https://dongzhenwhu.github.io/">Zhen Dong<sup>7, 8</sup></a>
       </span>
       <br>
       <span class="institution">
@@ -53,9 +56,11 @@
         <a href="https://www.ntu.edu.sg/eee"><sup>2</sup> School of Electrical and Electronic Engineering, Nanyang Technological University</a><br>
         <a href="https://schulich.ucalgary.ca/geomatics"><sup>3</sup> Department of Geomatics Engineering, University of Calgary</a><br>
         <a href="https://dxy.hhu.edu.cn/"><sup>4</sup> School of Earth Sciences and Engineering, Hohai University</a><br>
-		    <a href="https://liesmars.whu.edu.cn/"><sup>5</sup> State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University</a><br>
+		<a href="https://dlxy.jxnu.edu.cn/"><sup>5</sup> School of Geography and Environment, Jiangxi Normal University</a><br>
         <a href="https://ie.ncu.edu.cn/"><sup>6</sup> School of Information Engineering, Nanchang University</a></span>
 		    <sup>&dagger;</sup>Corresponding authors. &nbsp;&nbsp; 
+		<a href="https://liesmars.whu.edu.cn/"><sup>7</sup> State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University</a><br>
+		<a href="https://luojia.whu.edu.cn/"><sup>8</sup> Hubei Luojia Laboratory</a><br>
     </p>
     <font size="+2">
       <p style="text-align: center;">
@@ -68,16 +73,14 @@
 
   <div class="content">
     <h2 style="text-align:center;">Abstract</h2>
-    <p>Point cloud place recognition (PCPR) demonstrates considerable potential in applications such as autonomous driving, robot localization and navigation, and augmented reality. However, existing PCPR datasets lack diversity in scenes, platforms, and sensors, which limits the effective development of related research. To address this gap, we establish WHU-PCPR, a cross-platform heterogeneous point cloud dataset designed for place recognition.
-WHU-PCPR differentiates itself from existing datasets through its distinctive characteristics: 1) cross-platform heterogeneous point clouds: collected from survey-grade vehicle-mounted laser scanning (MLS) systems and low-cost portable helmet-mounted laser scanning (HLS) systems, each equipped with distinct mechanical and solid-state LiDAR sensors. 2) Complex localization scenes: encompassing real-time and long-term changes in both urban and campus road scenes. 3) Large-scale spatial coverage: featuring 82.3 km of trajectory over a 60-month period and an unrepeated route of approximately 30 km.
-Based on WHU-PCPR, we conduct extensive evaluation and in-depth analysis of several representative PCPR methods, and provide a concise discussion of key challenges and future research directions.</p>
+    <p>Point Cloud-based Place Recognition (PCPR) demonstrates considerable potential in applications such as autonomous driving, robot localization and navigation, and map update. In practical applications, point clouds used for place recognition are often acquired from different platforms and LiDARs across varying scene. However, existing PCPR datasets lack diversity in scenes, platforms, and sensors, which limits the effective development of related research. To address this gap, we establish WHU-PCPR, a cross-platform heterogeneous point cloud dataset designed for place recognition. The dataset differentiates itself from existing datasets through its distinctive characteristics: 1) cross-platform heterogeneous point clouds: collected from survey-grade vehicle-mounted Mobile Laser Scanning (MLS) systems and low-cost Portable helmet-mounted Laser Scanning (PLS) systems, each equipped with distinct mechanical and solid-state LiDAR sensors. 2) Complex localization scenes: encompassing real-time and long-term changes in both urban and campus road scenes. 3) Large-scale spatial coverage: featuring 82.3 km of trajectory over a 60-month period and an unrepeated route of approximately 30 km. Based on WHU-PCPR, we conduct extensive evaluation and in-depth analysis of several representative PCPR methods, and provide a concise discussion of key challenges and future research directions.</p>
 	<img src="./WHU-PCPR/overview.jpg" class="workflow" style="width:100%;"><br>
     <a style="text-align:center">
       WHU-PCPR, <strong> a cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes </strong>.
     It features:
 	  1) cross-platform heterogeneous point clouds: collected from survey-grade vehicle-mounted laser scanning (MLS) systems and low-cost portable helmet-mounted laser scanning (HLS) systems, each equipped with distinct mechanical and solid-state LiDAR sensors.
-    2) Complex localization scenes: encompassing real-time and long-term changes in both urban and campus road scenes.
-    3) Large-scale spatial coverage: featuring 82.3 km of trajectory over a 60-month period and an unrepeated route of approximately 30 km.
+      2) Complex localization scenes: encompassing real-time and long-term changes in both urban and campus road scenes.
+      3) Large-scale spatial coverage: featuring 82.3 km of trajectory over a 60-month period and an unrepeated route of approximately 30 km.
 	</a>
   </div>
 
@@ -98,21 +101,21 @@ Based on WHU-PCPR, we conduct extensive evaluation and in-depth analysis of seve
       <center>Detailed description of WHU-PCPR dataset.</center>
     </a>
     <div>
-	  <img class="summary-img" src="./WHU-PCPR/overview_table.png" style="width:75%;">
+	  <img class="summary-img" src="./WHU-PCPR/overview_table.png" style="width:85%;">
 	</div>
 
     <div>
 	  <img class="summary-img" src="./WHU-PCPR/cloud_distance.jpg" style="width:100%;">
 	</div>
     <a>
-      <center>Cloud to cloud distance in WHU-PCPR. (a) WHU 1\&2 (CS college),  (b) WHU 1\&2 (Info campus), (c) Hankou 1\&2 (Zhongshan Park), (d) Hankou 1\&2 (Jiefang Road 1), (e) WHU 1\&3 (CS college), (f) WHU 1\&3 (Info campus), (g) Hankou 1\&3 (Zhongshan Park), (h) Hankou 1\&3 (Jiefang Road 1).</center>
+      <center>Cloud to cloud distance in WHU-PCPR. (a) WHU 1\&2 (CS college),  (b) WHU 1\&2 (Info campus), (c) Hankou 1\&2 (Zhongshan Park), (d) Hankou 1\&2 (Jiefang Road 1), (e) WHU 1\&3 (CS college), (f) WHU 1\&3 (Info campus), (g) Hankou 1\&3 (Zhongshan Park), (h) Hankou 1\&3 (Jiefang Road 1). A, B, C, and D are the positional errors of manually selected corresponding points (gray/blue/red: phase 1/2/3).</center>
     </a>
   </div>
 
   <div class="content">
   <h2 style="text-align:center;">Benchmark - Retrieval</h2>
     <a>
-      <center>Retrieval results on Wuhan-PCPR and Oxford.</center>
+      <center>Retrieval results on Wuhan-PCPR</center>
     </a>
 	<div>
 	  <img class="summary-img" src="./WHU-PCPR/retrieval_table.png" style="width:100%;">
@@ -122,7 +125,7 @@ Based on WHU-PCPR, we conduct extensive evaluation and in-depth analysis of seve
 	  <img class="summary-img" src="./WHU-PCPR/retrieval_pr_curve.jpg" style="width:100%;">
 	</div>
     <a>
-      <center>Recall curves of retrieval baselines on Wuhan-PCPR and Oxford RobotCar. (a) Hankou 1&2, (b) Hankou 1&3, (c) Hankou 2&3, (d) WHU 1&2, (e) WHU 1&3, (f) WHU 2&3.</center>
+      <center>Recall curves of retrieval baselines on Wuhan-PCPR. (a) Hankou 1&2, (b) Hankou 1&3, (c) Hankou 2&3, (d) WHU 1&2, (e) WHU 1&3, (f) WHU 2&3.</center>
     </a>
 	<br>
 
