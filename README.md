@@ -10,4 +10,4 @@ We will publish the dataset in Baidu Netdisk and Google Drive once the paper is 
 
 -[baidu cloud disk](https://pan.baidu.com/s/1Jt6ExrDxG1OHd5NvZau2vQ), password: k2hd
 
--[google cloud disk](https://drive.google.com/drive/folders/11d-jLTtRHLVnM3brRoTgD3902d9R517l)
+-[google cloud disk](https://drive.google.com/file/d/1Kg9Jjm6bnIJXXiN4dkdqsKT7SeEXTxWC/view?usp=sharing)
