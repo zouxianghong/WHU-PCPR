@@ -1,0 +1,8 @@
+exp_dir: /home/ericxhzou/Code/PCGL-Benchmark/exp/rerank
+debug: False
+rerank:
+  name: SGV
+  pr_backbone: PPTNet  # PPTNet / LoGG3D-Net / EgoNN
+  k: 25
+  use_cpu: False
+protocol: '/home/ericxhzou/Code/PCGL-Benchmark/config/rerank/protocol.yaml'

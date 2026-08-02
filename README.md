@@ -11,3 +11,19 @@ We will publish the dataset in Baidu Netdisk and Google Drive once the paper is 
 -[baidu cloud disk](https://pan.baidu.com/s/1Jt6ExrDxG1OHd5NvZau2vQ), password: k2hd
 
 -[google cloud disk](https://drive.google.com/file/d/1Kg9Jjm6bnIJXXiN4dkdqsKT7SeEXTxWC/view?usp=sharing)
+
+
+# Install
+Pull docker image:
+'''
+docker pull zouxh22135/pc_loc:v2
+'''
+
+# Run
+'''
+bash run.sh
+'''
+
+# Benchmark
+We provide our pretrained models and experiment results:
+-[baidu cloud disk](xxx), password: k2hd

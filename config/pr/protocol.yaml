@@ -1,0 +1,78 @@
+train:
+  env_name: 'Hankou_1_2'
+  submap_type: '30m_2m_no_dynamics'
+  environment: 'pickles/Wuhan/Hankou_1_2_train_queries.pickle'
+eval:
+  environments: {
+    'Hankou_1_2': {
+      'submap_type': '30m_2m_no_dynamics',
+      'database_files': ['pickles/Wuhan/Hankou_1_2_eval_database.pickle'],
+      'query_files': ['pickles/Wuhan/Hankou_1_2_eval_query.pickle'],
+    },
+    'Hankou_1_3': {
+      'submap_type': '30m_2m_no_dynamics',
+      'database_files': ['pickles/Wuhan/Hankou_1_3_eval_database.pickle'],
+      'query_files': ['pickles/Wuhan/Hankou_1_3_eval_query.pickle'],
+    },
+    'Hankou_2_3': {
+      'submap_type': '30m_2m_no_dynamics',
+      'database_files': ['pickles/Wuhan/Hankou_2_3_eval_database.pickle'],
+      'query_files': ['pickles/Wuhan/Hankou_2_3_eval_query.pickle'],
+    },
+    'Campus_1_2': {
+      'submap_type': '30m_2m_no_dynamics',
+      'database_files': ['pickles/Wuhan/Campus_1_2_eval_database.pickle'],
+      'query_files': ['pickles/Wuhan/Campus_1_2_eval_query.pickle'],
+    },
+    'Campus_1_3': {
+      'submap_type': '30m_2m_no_dynamics',
+      'database_files': ['pickles/Wuhan/Campus_1_3_eval_database.pickle'],
+      'query_files': ['pickles/Wuhan/Campus_1_3_eval_query.pickle'],
+    },
+    'Campus_2_3': {
+      'submap_type': '30m_2m_no_dynamics',
+      'database_files': ['pickles/Wuhan/Campus_2_3_eval_database.pickle'],
+      'query_files': ['pickles/Wuhan/Campus_2_3_eval_query.pickle'],
+    },
+    'Oxford': {
+      'submap_type': 'pointcloud_20m_10overlap',
+      'database_files': ['pickles/Oxford/Oxford_eval_database.pickle'],
+      'query_files': ['pickles/Oxford/Oxford_eval_query.pickle'],
+    },
+  }
+  world_thresh: {
+    'Oxford': 25,
+    'DCC': 10,
+    'Riverside': 10,
+    'In-house': 25,
+    'Hankou_1_2': 30,
+    'Hankou_1_3': 30,
+    'Hankou_2_3': 30,
+    'Campus_1_2': 30,
+    'Campus_1_3': 30,
+    'Campus_2_3': 30
+  }
+  false_pos_thresh: {
+    'Oxford': -1,
+    'DCC': 20,
+    'Riverside': 20,
+    'In-house': -1,
+    'Hankou_1_2': -1,
+    'Hankou_1_3': -1,
+    'Hankou_2_3': -1,
+    'Campus_1_2': -1,
+    'Campus_1_3': -1,
+    'Campus_2_3': -1
+  }
+  time_thresh: {
+    'Oxford': -1,
+    'DCC': 90,
+    'Riverside': 90,
+    'In-house': -1,
+    'Hankou_1_2': -1,
+    'Hankou_1_3': -1,
+    'Hankou_2_3': -1,
+    'Campus_1_2': -1,
+    'Campus_1_3': -1,
+    'Campus_2_3': -1
+  }

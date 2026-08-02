@@ -1,0 +1,47 @@
+save_dir: '/home/ericxhzou/Code/PCGL-Benchmark/exp/pr'
+debug: False
+data:
+  num_points: 4096
+  dataset_folder: '/home/ericxhzou/Code/PCGL-Benchmark/pickles'
+  aug_mode: 0
+  pin_memory: False
+model:
+  name: 'LoGG3DNet'
+  quantization_type: 'cartesian'
+  quantization_size: 0.01
+  normalize_embeddings: True
+train:
+  aug_mode: 0
+  memory:
+    num_pairs: 0
+  num_workers: 8
+  batch_size: 32
+  batch_size_limit: 100
+  batch_expansion_rate: 1.4
+  batch_expansion_th: 0.7
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.0001
+    scheduler: 'MultiStepLR'
+    scheduler_milestones: [10,20,30,40]
+    epochs: 50
+  g_loss:
+    name: 'BatchHardTripletMarginLoss'  # QuadrupletLossWithMasks (margin1: 0.5; margin2: 0.3; positives_per_query: 2; negatives_per_query: 2)
+    margin: 0.2
+  l_loss:
+    name: 'PointContrastiveLoss'
+    point_pos_margin: 0.1
+    point_neg_margin: 2.0
+    point_neg_weight: 1.0
+    num_pos: 512
+    num_hn_samples: 2048
+eval:
+  aug_mode: 0
+  rotate_theta: 0.0  # make sense when aug_mode = 2
+  batch_size: 256
+  thresh_min: 0
+  thresh_max: 1
+  num_thresholds: 1000
+  similarity: 'euclidean'
+  save_desc: True
+protocol: '/home/ericxhzou/Code/PCGL-Benchmark/config/pr/protocol.yaml'

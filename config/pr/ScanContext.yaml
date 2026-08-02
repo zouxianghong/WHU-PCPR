@@ -1,0 +1,20 @@
+save_dir: '/home/ericxhzou/Code/PCGL-Benchmark/exp/pr'
+debug: False
+data:
+  dataset_folder: '/home/ericxhzou/Code/PCGL-Benchmark/pickles'
+  aug_mode: 0
+model:
+  name: 'ScanContext'
+  num_sector: 60
+  num_ring: 20
+  max_length: 30.0
+  lidar_height: 2.0
+train:
+  num_workers: 0
+eval:
+  aug_mode: 0
+  rotate_theta: 0.0  # make sense when aug_mode = 2
+  batch_size: 256
+  similarity: 'scancontext'
+  save_desc: False
+protocol: '/home/ericxhzou/Code/PCGL-Benchmark/config/pr/protocol.yaml'

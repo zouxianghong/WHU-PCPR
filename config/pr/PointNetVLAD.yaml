@@ -1,0 +1,40 @@
+save_dir: '/home/ericxhzou/Code/PCGL-Benchmark/exp/pr'
+debug: False
+data:
+  num_points: 4096
+  dataset_folder: '/home/ericxhzou/Code/PCGL-Benchmark/pickles'
+  aug_mode: 0
+  pin_memory: False
+model:
+  name: 'PointNetVLAD'
+  output_dim: 256
+  normalize_embeddings: True
+train:
+  aug_mode: 0
+  memory:
+    num_pairs: 0
+  num_workers: 4
+  batch_size: 16
+  batch_size_limit: 80
+  batch_expansion_rate: 1.4
+  batch_expansion_th: 0.7
+  optimizer:
+    lr: 0.000005
+    weight_decay: 0.0
+    epochs: 20
+  g_loss:
+    name: 'BatchHardTripletMarginLoss' # BatchHardTripletMarginLoss / Quadruplet
+    margin: 0.2
+    lazy: True
+    margin1: 0.5
+    margin2: 0.2
+eval:
+  aug_mode: 0
+  rotate_theta: 0.0  # make sense when aug_mode = 2
+  batch_size: 256
+  thresh_min: 0
+  thresh_max: 1
+  num_thresholds: 1000
+  similarity: 'euclidean'
+  save_desc: False
+protocol: '/home/ericxhzou/Code/PCGL-Benchmark/config/pr/protocol.yaml'

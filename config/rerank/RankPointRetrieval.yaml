@@ -1,0 +1,14 @@
+exp_dir: /home/ericxhzou/Code/PCGL-Benchmark/exp/rerank
+debug: False
+rerank:
+  name: RPR
+  pr_backbone: PPTNet  # PPTNet / LoGG3D-Net / EgoNN
+  k: 25
+  num_keypt: 0
+  with_noise: True
+  sigma: 0.01
+  reg_type: or  # or: Overlap Ratio / vc: Visual Consistency
+  lamda1: 1.0
+  lamda2: 0.8
+  fgr_dist_thresh: 0.5
+protocol: '/home/ericxhzou/Code/PCGL-Benchmark/config/rerank/protocol.yaml'
