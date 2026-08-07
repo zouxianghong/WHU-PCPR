@@ -8,10 +8,7 @@ WHU-PCPR: A multi-platform heterogeneous point cloud dataset for place recogniti
 We will publish the dataset in Baidu Netdisk and Google Drive once the paper is accepted.
 * Sample data:
 
--[baidu cloud disk](https://pan.baidu.com/s/1Jt6ExrDxG1OHd5NvZau2vQ), password: k2hd
-
--[google cloud disk](https://drive.google.com/file/d/1Kg9Jjm6bnIJXXiN4dkdqsKT7SeEXTxWC/view?usp=sharing)
-
+-[baidu cloud disk](https://pan.baidu.com/s/1ZyqRRSdLjaunq3bJSba1YA?pwd=jkuv), password: jkuv
 
 # Install
 Pull docker image:
